@@ -1,0 +1,23 @@
+.list {
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  &-item {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.6s;
+    width: 100%;
+    &.active {
+      background-color: lightgray;
+    }
+    &:hover {
+      background-color: lightgray;
+      cursor: pointer;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

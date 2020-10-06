@@ -1,0 +1,85 @@
+.notification {
+  transition: 0.3s ease;
+  position: relative;
+  margin-bottom: 15px;
+  max-height: 100px;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid transparent;
+  max-width: 290px;
+  padding: 15px 15px 15px 15px;
+  display: flex;
+  &-container {
+    font-size: 14px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 11;
+    top: 15px;
+    right: 15px;
+    transition: transform 0.6s ease-in-out;
+    animation: notification-in-right 0.7s;
+  }
+  &-title {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 6px;
+    width: 300px;
+    height: 18px;
+    text-transform: capitalize;
+  }
+  &-message {
+    margin: 0;
+    text-align: left;
+    height: 18px;
+    margin-left: -1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-image {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  &-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  &-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  &-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+  }
+  &-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+  }
+  &-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    &-close:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+@keyframes notification-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

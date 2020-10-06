@@ -1,0 +1,28 @@
+.comment {
+  padding: 10px 0px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  &-list {
+    padding: 15px 0px;
+  }
+  &-header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-body {
+    padding: 10px;
+  }
+  &-author {
+    margin-right: 5px;
+  }
+  &-rate {
+    margin-bottom: 5px;
+  }
+  &-date {
+    font-size: 12px;
+  }
+}

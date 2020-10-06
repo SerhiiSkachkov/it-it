@@ -1,0 +1,30 @@
+.card {
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  @media (min-width: 425px) {
+    display: flex;
+  }
+  &-img {
+    padding: 10px;
+    line-height: 0px;
+    @media (min-width: 425px) {
+      width: 30%;
+      border-right: 1px solid #f0f0f0;
+    }
+    & img {
+      width: 100%;
+    }
+  }
+  &-content {
+    padding: 10px;
+    @media (min-width: 425px) {
+      width: 70%;
+    }
+  }
+  &-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}

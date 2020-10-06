@@ -1,0 +1,25 @@
+.comment-form {
+  .form {
+    &-field--rating {
+      display: flex;
+      flex-flow: wrap;
+      .form-field {
+        margin: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    &-label {
+      font-size: 20px;
+      margin-bottom: 0px;
+      .star {
+        cursor: pointer;
+      }
+    }
+
+    &-control--rating {
+      display: none;
+    }
+  }
+}
